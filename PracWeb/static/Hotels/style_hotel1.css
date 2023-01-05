@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(187, 163, 97);
+}
+
+#navbar{
+    background-color: black;
+    padding: 15px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    font-family: 'Yeon Sung';
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar li a{
+    color: rgb(187, 163, 97);
+    text-decoration: none;
+    padding: 3px 25px;
+    font-size: 1.1rem;
+}
+
+#navbar li a:hover{
+    color: white;
+}
+
+#logo{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 14px;
+    color: rgb(187, 163, 97);
+    margin-right: 60px;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+#logo img{
+    height: 25px;
+    width: 25px;
+}
+
+#siteintro{
+    padding-bottom: 95px;
+    background:center / cover no-repeat url('/static/images/transport1.jpg');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+}
+
+#button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 30%;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-size: 18px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#siteintro h1{
+    text-align: center;
+}
+
+#siteintro h3{
+    text-align: center;
+    font-family: 'Teko';
+    padding-top: 2px;
+    font-size: 28px;
+}
+
+#siteintro h1:hover{
+    transform: scale(1.2);
+}
+
+#vision{
+    background-color: black;
+    text-align: center;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+#vision h3:hover{
+    transform: scale(1.1);
+}
+
+#visions{
+    background-color: white;
+    text-align:center;
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-gap: 16px; 
+}
+
+#visions .vision1{
+    border-radius: 20px;
+    height: 142px;
+    background-color: black;
+}
+
+#visions .vision1:hover{
+    filter: brightness(80%);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#visions .vision1 h1{
+    margin-top: 10px;
+    font-family: 'Teko';
+    font-weight: bold;
+}
+
+#visions .vision1 .boximg img{
+    height: 112px;
+    width: 86px;
+}
+
+#visions .vision1 .boximg1 img{
+    height: 99px;
+    width: 86px;
+}
+
+#visions .vision1 .content{
+    font-family: 'Yeon Sung';
+    color: white;
+}
+
+#footer{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    background-color: black;
+    color: rgb(187, 163, 97);
+    font-size: 1.2rem;
+}
+
+input[type=number]{
+    font-family: 'Yeon Sung';
+    background-color: black;
+    width: 30%;
+    margin-top: 1%;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-weight: bold;
+    border: none;
+    color: rgb(187, 163, 97);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: rgb(187, 163, 97);
+    font-weight: 20px;
+    font-size: large;
+}
+
+label{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: large;
+}
+
+#req{
+    color: red;
+}
+
+@media(min-width: 820px){
+    #visions{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media(max-width: 820px) and (min-width: 600px){
+    #visions{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px){
+    #visions{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media(max-width: 600px){
+    #navbar li a{
+        display: block;
+        color: rgb(187, 163, 97);
+        text-decoration: none;
+        padding: 3px 20px;
+        font-size: 1.1rem;
+    }
+    #logo{
+        margin-right: 12px;
+    }
+}
+#serv{
+    display: block;
+}
