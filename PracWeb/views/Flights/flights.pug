@@ -1,0 +1,33 @@
+extends ../base.pug
+block scripts 
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/Flights/style_flight.css
+block content
+    section#flightintro
+        div #[h1 WE HAVE PLANNED FOR YOU]
+        div.h3class #[h3 Please Have A Sweet Look!!!]
+    section#flightsearch
+        div#flightform
+            div#agenda
+        div#flightform1
+            h1#flightintroh1 SEARCH FOR FLIGHTS
+            h2 ATLEAST Fill Out The Required Information !!!
+            div#showbookings
+                form(action="/showmybook" method="get" autocomplete="off")
+                    button(class=button id="bookingsbutton" type="submit") MY BOOKINGS
+            h3= message
+            form(action="/flightcheck" id="signupform" method="post" autocomplete="off")
+                label(id="departure") YOUR DEPARTURE LOCATION #[span(id="req") *]
+                input(type="text" name="departure" id="inputdeparture" placeholder="Departure Loaction" autofocus required)
+                br
+                label(id="destination") YOUR DESTINATION LOCATION #[span(id="req") *]
+                input(type="text" name="destination" id="inputdestination" placeholder="Destination Loaction" autofocus required)
+                br
+                label(id="date") DESIRED FLIGHT DATE #[span(id="req") *]
+                br
+                input(type="date" name="date" isd="inputdate" placeholder="Flight Date" autofocus required)
+                br 
+                button(class=button id="button" type="submit") SEARCH

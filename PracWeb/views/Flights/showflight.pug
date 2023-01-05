@@ -1,0 +1,47 @@
+extends ../base.pug
+block scripts 
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/Flights/style_showflight.css
+block content
+    div#flightgrid
+        for flightt in flightlist
+            div#flights
+                h3 ID
+                h4= flightt.ID
+                br
+                h3 AIRLINE
+                h4= flightt.Airline
+                br
+                h3 DEPARTURE
+                h4= flightt.Departure
+                br
+                h3 DESTINATION
+                h4= flightt.Destination
+                br
+                h3 DATE
+                h4= flightt.Date
+                br
+                h3 TIME
+                h4= flightt.Time
+                br
+                h3 AMOUNT
+                h4= flightt.Amount
+                br
+                h3 SEATS
+                h4= flightt.Seats
+                br
+                h3 BOOKED
+                h4= flightt.Booked
+                br
+    div#formgrid
+        div#form1
+            h1 BOOK FLIGHT
+            form(action="/bookflight" method="post" autocomplete="off")
+                input(type="number" name="id" id="inputid" placeholder="Flight ID" autofocus required)
+                input(type="number" name="bookingch" id="inputbookingch" placeholder="How Many Children?" autofocus required)
+                input(type="number" name="bookingad" id="inputbookingad" placeholder="How Many Adults?" autofocus required)
+                br
+                button(class=button id="button" type="submit") BOOK NOW
