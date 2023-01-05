@@ -1,0 +1,226 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../static/style.css
+            include ../static/style_about.css
+            include ../static/Tours/style_showmybookings.css
+        script
+            include ../static/index.js
+            include ../static/scriptAbt.js
+    body 
+        if message == " "
+            nav#navbar.top    
+                //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+                ul
+                    div#logo  
+                        img(src="../static/images/sitelogo.png")
+                        | ATG
+                    li #[a(href='/') Home]
+                        //- If you want to use li and a together
+                    li #[a(href='/about') About Us]
+                    li #[a(href='/contact') Join Us]
+                    li #[a(href='/logout' onclick="myFunc1()") Log Out]
+        else
+            nav#navbar.top    
+                //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+                ul
+                    div#logo  
+                        img(src="../static/images/sitelogo.png")
+                        | ATG
+                    li #[a(href='/') Home]
+                        //- If you want to use li and a together
+                    li #[a(href='/about') About Us]
+                    li #[a(href='/contact') Join Us]
+                    li #[a(href='/logout' onclick="myFunc1()") Log Out]
+                    li#serv #[a(href='/services') Services]
+        #set.breaker
+          h1 Our Services
+        #wasooli.services
+          .obj
+            .doners
+              img(src='../static/images/s2.png' alt='')
+            .text
+              p Hotels
+          .obj
+            .doners
+              img(src='../static/images/s1.png' alt='')
+            .text
+              p Flights
+          .obj
+            .doners
+              img(src='../static/images/s4.png' alt='')
+            .text
+              p Tours
+          .obj
+            .doners
+              img(src='../static/images/s5.png' alt='')
+            .text
+              p Transport
+        hr
+        #Hotels.context
+          .visuals
+            img#c1(src='../static/images/bg4.jpg' alt='')
+            img#iB1(src='../static/images/policy.jpg' onmouseover='hot()' onmouseout='hotels()')
+            ul#p1
+              li
+                | Any cancellation in reservations must be done before a week of booking for fll refund
+              li We shall not be responsible in any of your personal belongings.
+              li Make sure to check your hotel room once before leaving
+              li Any addition to to your hotel booking will be charged seperately
+              li Gym, Spa, Swimming Pools charges are not included
+          .content
+            .name
+              h1 Hotels
+            .m4
+              p
+                | The main advantage of organizing your holidays by booking directly through ADVANCE TOUR GUIDES is that we can arrange a tailor-made stay for you. You can indicate your room preference, if you will celebrate your birthday during your stay&mldr;You can also highlight any requirement essential for you, as in the case of food allergies or intolerances, or guests with reduced mobility.
+        hr
+        #Flights.context
+          .content
+            .name
+              h1 Flights
+            .m4
+              p
+                | Bygone are the days when you were required to visit a nearby local travel agent so as to book a flight. Today, you no longer have to visit a travel agent as you can book a flight easily with best, cheapest, rates at the comfort of your sofa&mldr;If you are always busy and still want to take a trip with your family overseas, ensure you book your with ADVANCE TOUR GUIDES and get tickets online at simple clicks.
+          .visuals
+            img#c2(src='../static/images/bg1.jpg' alt='')
+            img#iB2(src='../static/images/policy.jpg' onmouseover='fli()' onmouseout='flights()')
+            ul#p2
+              li
+                | Flights must be cancelled before a week from the booking for full refund.
+              li Toddlers travlers are seated on lap, no bookings for them seperately
+              li Children under 13 years have a discount of 20% entire on their bookings
+              li Must reach the airport before 3 hours before your flight
+              li In case of any flight missed AGT will not be responsible and no money will be refunded
+        hr
+        #Tours.context
+          .visuals
+            img#c3(src='../static/images/bg2.jpg' alt='')
+            img#iB3(src='../static/images/policy.jpg' onmouseover='tou()' onmouseout='tours()')
+            ul#p3
+              li
+                | ATG shall not be responsible for any loss including life and personal belongings.
+              li Weapons, Pets or other items are strictly prohibited.
+              li For keeping Green and Healthy Pakistan, a fine of 200rs will be charged in case of disrupting the greenry.
+              li Toddlers traveling are free of charges.
+              li Dates are all tentatives and can be changed in accordance with weather or any other circumstances.
+          .content
+            .name
+              h1 Tours
+            .m4
+              p
+                | We love you that&apos;s why, On a more individual level, traveling with an escorted tour with ADVANCE TOUR GUIDES means a higher quality of service for you! You&rsquo;ll have a manager from our company traveling with you. They will take care of your check-ins, transportation, reservations, confirmations, complaints, and issues that arise.
+        hr
+        #Transport.context
+          .content
+            .name
+              h1 Transport
+            .m4
+              p
+                | We understand and no matter what kind of event or trip you&rsquo;re planning, figuring out the best transportation options for guests and attendees can often be frustrating and a serious challenge.
+                | You want to be able to prioritize comfort and convenience, but you also need to ensure that you find an affordable solution that&rsquo;s also in line with the standards of your event.
+          .visuals
+            img#c4(src='../static/images/bg3.jpg' alt='')
+            img#iB4(src='../static/images/policy.jpg' onmouseover='trans()' onmouseout='transport()')
+            ul#p4
+              li
+                | Available seats are displayed, in case of no seats, it will be mentioned.
+              li All train modes are are compartment based, for customized contact us.
+              li You'll be asked for your preference of comfotrability AC/No-AC.
+              li For customize departure and destinations, we will provide you the link.
+              li Whole boggy/compartment can be booked only.
+        hr
+        #phone.app
+          p Reviews
+          ul.hs.full
+            li.rivals
+              | &quot;Incredibly accommodating, helpful and professional, both the agency and the driver. Any and all concerns were accommodated with ease. Highly recommended!&quot;
+            li.rivals
+              | &quot;Great Experience with ATG. Special thanks to Ms. Insha for personalised services for a demanding traveler like me. And Mr. Ismail who assisted me getting visas smoothly. I would happily recommend them to my friends.&quot;
+            li.rivals
+              | &quot;We had wondeful time, experienced all the adventure, calmness, beautiful sights and rich historic places in Pakistan.
+              | We can not ask better than that!
+              | Highly recommended to All!
+              | Looking forward for all future tours :)&quot;
+            li.rivals
+              | &quot;Have a wonderful experience. Very accomodating and especially lowest cost as compared to others.&quot;
+            li.rivals
+              | Honesty , Commitment and complete guide to tours , I appreciate their work towards tourism, we can now hire a reasonable company to find new destinations in Pakistan. I recommend their services.
+        hr
+        #wi.container
+          #sub.team.list
+            p MEET
+            br
+            p THE
+            br
+            p TEAM
+          div
+            #Insha.members.list(onmouseover='insha()' onmouseout='meso()')
+              .info
+                h1 Insha
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                // <span>
+                a(href='https://github.com/insh-samnani' target='_blank')
+                  img#m1.logos(src='../static/images/github.png' alt='')
+                //
+                  </span>
+                  <span>
+                a(href='https://www.linkedin.com/in/insha-samnani-286961215/' target='_blank')
+                  img#m2.logos(src='../static/images/linkedIn.png' alt='')
+                // </span>
+              .imageHt
+                img#dada(src='../static/images/member0.png' alt='Insha')
+          div
+            #Ismail.members.list(onmouseover='ismail()' onmouseout='turtle()')
+              .info
+                h1 Ismail
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                // <span>
+                a(href='https://github.com/iszmayl' target='_blank')
+                  img#m3.logos(src='../static/images/github.png' alt='')
+                // </span>
+                // <span>
+                a(href='https://www.linkedin.com/in/ismail-ahmed-ansari-27378720b/' target='_blank')
+                  img#m4.logos(src='../static/images/linkedIn.png' alt='')
+                // </span>
+              .imageHt
+                img#turt(src='../static/images/member2.png' alt='Ismail')
+          div
+            #Yusra.members.list(onmouseover='yus(this)' onmouseout='adam(this)')
+              .info
+                h1 Yusra
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                br.rem
+                // <span>
+                a(href='')
+                  img#m5.logos(src='../static/images/github.png' alt='')
+                //
+                  </span>
+                  <span>
+                a(href='https://www.linkedin.com/in/yusra-adam-79a578223/' target='_blank')
+                  img#m6.logos(src='../static/images/linkedIn.png' alt='')
+                // </span>
+              .imageHt
+                img#ada(src='../static/images/member1.png' alt='Yusra')
+        br 
+        br
+        br
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com

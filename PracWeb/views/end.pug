@@ -1,0 +1,33 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../static/end.css
+            include ../static/style.css
+        script
+            include ../static/index.js
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/Images/sitelogo.png")
+                    | ATG
+                li #[a(href='/') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/about') About Us]
+                li #[a(href='/contact') Join Us]
+                li #[a(href='/logout' onclick="myFunc1()") Log Out]
+                li #[a(href='/services') Services]
+        section#topsec 
+            <div class="wrapper" >
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> 
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+            </div>
+            h1 YOUR BOOKING HAS BEEN FINALIZED..
+        footer#footer
+                | Copyright @ 2022 AdvanceTourGuides.com

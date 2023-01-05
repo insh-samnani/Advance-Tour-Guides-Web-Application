@@ -1,0 +1,35 @@
+extends base.pug
+block scripts 
+    script(src="../static/index.js")
+block style
+    style
+        include ../static/style.css
+        include ../static/style_contact.css
+block content
+    section#contactus
+        div#contactcard
+            div#contactform
+                div#agenda
+                    h2 CONTACT US
+                    h3 Need to get in touch with us? Sign up NOW. Having any difficulty? Email us at 
+                    h3 #[a(href="mailto:k200247@nu.edu.pk" _target="_blank") k200247@nu.edu.pk]
+                    h3 We will try to get to you back SOON
+            div#contactform
+                    h1#loginhead LOG IN
+                    h3= message2
+                    form(action="/login" id="loginform" method="post" autocomplete="off")
+                        label(id="email") YOUR EMAIL #[span(id="req") *]
+                        input(type="email" name="email" id="inputemail" placeholder="Please Enter Your Email" autofocus required)
+                        br
+                        label(id="password") YOUR PASSWORD #[span(id="req") *]
+                        input(type="password" name="password" id="inputpassword" placeholder="Please Enter Your Password" autofocus required)
+                        br
+                        <div class="some-class">
+                            label(id="checking") USER? #[input(type="radio" id="checking5" onclick="myFuncer()" name="checking1" value="userr" autofocus)]
+                            label(id="checking") ADMIN? #[input(type="radio" id="checking3" onclick="myFuncer()" name="checking1" value="adminn" autofocus)]
+                            label(id="checking") TOUR GUIDE? #[input(type="radio" id="checking4" onclick="myFuncer()" name="checking1" value="tourguidee" autofocus)]
+                        </div>
+                        br
+                        button(class=button id="button" type="submit") Log In
+                        a(href='/forgetpass' id = "forgetnow") Forget Password?
+
