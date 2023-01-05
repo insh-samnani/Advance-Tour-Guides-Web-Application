@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#new{
+    background-color: rgb(187, 163, 97);
+    padding: 15px 20px;
+}
+
+#new ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#new li{
+    font-family: 'Yeon Sung';
+    list-style: none;
+    font-weight: bold;
+}
+
+#new li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 3px 25px;
+}
+
+#new li a:hover{
+    color: white;
+}
+
+#adminintro{
+    padding-bottom: 95px;
+    padding-left: 30%;
+    background:center / cover no-repeat url('/static/images/admin2.jpg');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+}
+
+#adminintro h3{
+    font-family: 'Teko';
+    padding-top: 2px;
+    font-size: 28px;
+}
+
+#adminintro h1:hover{
+    transform: scale(1.2);
+}
+
+#logoadmin{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right: 35px;
+}
+
+#logoadmin:hover{
+    transform: scale(1.1);
+}
+
+#logoadmin img{
+    height: 25px;
+    width: 25px;
+}
+
+#add{
+    height: 1070px;
+    background-color: rgb(187, 163, 97);
+}
+
+#addform{
+    padding-top: 2%;
+    border-radius: 20px;
+    height: 1070px;
+    background-color: wheat;
+}
+
+#addform h1{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+#addform h3{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    margin-top: 2%;
+}
+
+#signupadd{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text], input[type=number]{
+    font-family: 'Yeon Sung';
+    background-color: rgb(187, 163, 97);
+    width: 35%;
+    padding: 12px 20px;
+    margin: 22px 34px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 20px;
+}
+
+label{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: large;
+}
+
+#req{
+    color: red;
+}
+
+#button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 20%;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#button:hover{
+    color: white;
+}
+
+#update{
+    display: none;
+}
+
+#delete{
+    display: none;
+}
+
+@media(max-width: 600px){
+    #new li a{
+        display: block;
+        padding: 3px 15px;
+        font-size: 1rem;
+    }
+    #logoadmin{
+        margin-right: 10px;
+    }
+    #adminintro h3{
+        text-align: center;
+    }
+    #addform h1{
+        padding-top: 10%;
+    }
+}
+
+#serv{
+    display: block;
+}

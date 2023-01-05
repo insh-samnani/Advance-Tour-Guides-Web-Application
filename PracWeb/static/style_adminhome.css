@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#navbar{
+    background-color: black;
+    padding: 15px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    font-family: 'Yeon Sung';
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar li a{
+    color: rgb(187, 163, 97);
+    text-decoration: none;
+    padding: 3px 25px;
+    font-size: 1.1rem;
+}
+
+#navbar li a:hover{
+    color: white;
+}
+
+#logo{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 14px;
+    color: rgb(187, 163, 97);
+    margin-right: 60px;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+#logo img{
+    height: 25px;
+    width: 25px;
+}
+
+#vision{
+    background-color: wheat;
+    text-align: center;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+#vision h3:hover{
+    transform: scale(1.1);
+}
+
+#visions, #visions1{
+    background-color: black;
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-gap: 16px; 
+}
+
+#visions .vision1{
+    border-radius: 20px;
+    height: 200px;
+    background-color: wheat;
+}
+
+#visions1 .vision11{
+    border-radius: 20px;
+    height: 300px;
+    background-color: wheat;
+}
+
+#visions .vision1:hover, #visions1 .vision11:hover{
+    filter: brightness(80%);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#visions .vision1 h1, #visions1 .vision11 h1{
+    margin-top: 10px;
+    font-family: 'Teko';
+    font-weight: bold;
+}
+
+#visions .vision1 .boximg img, #visions1 .vision11 .boximg img{
+    height: 112px;
+    width: 86px;
+}
+
+#visions .vision1 .boximg1 img, #visions1 .vision11 .boximg1 img{
+    height: 99px;
+    width: 86px;
+}
+
+#visions .vision1 .content, #visions1 .vision11 .content{
+    font-family: 'Yeon Sung';
+}
+
+.argument{
+    margin-right: 60px;
+}
+
+.updates{
+    color:red;
+    margin-top: 15px;
+}
+
+.vision11 .content h3{
+    margin-top: 10px;
+}
+
+#inputidflight, #inupde{
+    margin-top: 10px;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 50%;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-size: 18px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#inupde{
+    margin-left: 25%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 913px){
+    #clients{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    #visions, #visions1{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media(max-width: 913px) and (min-width: 600px){
+    #clients{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #visions, #visions1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px){
+    #clients{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #visions, #visions1{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media(max-width: 600px){
+    #navbar li a{
+        display: block;
+        color: rgb(187, 163, 97);
+        text-decoration: none;
+        padding: 3px 20px;
+        font-size: 1.1rem;
+    }
+    #logo{
+        margin-right: 12px;
+    }
+}
+#serv{
+    display: block;
+}

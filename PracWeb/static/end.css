@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+#topsec{
+    padding-bottom: 130px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    animation: image 25s infinite;
+    background: center / cover no-repeat url('/static/images/end1.jpeg');
+}
+#topsec h1{
+    font-size:50px;
+}
+.wrapper{
+    height: 17vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.checkmark__circle{
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+    /* stroke: rgb(189, 163, 93); */
+    fill: rgb(189, 163, 93);
+    animation: stroke 1.2s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+.checkmark{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 5;
+    stroke: black;
+    stroke-miterlimit: 20;
+    margin: 20% auto;
+    box-shadow: inset 0px 0px 0px rgb(189, 163, 93);
+    animation: fill 1.2s ease-in-out 1.2s forwards, scale 1.2s ease-in-out 1.2s both
+}
+.checkmark__check{
+    transform-origin: 60% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 1.2s cubic-bezier(0.65, 0, 0.45, 1) 1.2s forwards
+}
+@keyframes stroke{
+    100%{
+        stroke-dashoffset: 0
+    }
+}
+@keyframes scale{
+    0%, 100%{
+        transform: none
+    }
+    50%{
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+@keyframes fill{
+    100%{
+        box-shadow: inset 10px 0px 10px 50px #7ac142
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0
+    }
+}

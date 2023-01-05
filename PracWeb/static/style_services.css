@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+
+#sections{
+    background-color: black;
+}
+
+#griddiv{
+    display: grid;
+    grid-gap: 40px;
+    align-items: center;
+}
+
+#hpic{
+    height: 300px;
+    width: 100%;
+    background:center / cover no-repeat url('/static/images/Hotel_serv.jpg');
+    border-radius: 20px;
+}
+
+#fpic{
+    height: 350px;
+    width: 100%;
+    background:center / cover no-repeat url('/static/images/Flight_serv.jpg');
+    border-radius: 20px;
+}
+
+#tpic{
+    height: 350px;
+    width: 100%;
+    background:center / cover no-repeat url('/static/images/Tour_serv.jpg');
+    border-radius: 20px;
+}
+
+#dpic{
+    height: 350px;
+    width: 100%;
+    background:center / cover no-repeat url('/static/images/Deal_serv.jpg');
+    border-radius: 20px;
+}
+
+#contentpic{
+    height: 350px;
+    background-color: rgb(187, 163, 97);
+    border-radius: 20px;
+}
+
+#contentpic:hover{
+    filter: brightness(80%);
+}
+
+#contentpic h1{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#contentpic h3, #contentpic h4{
+    text-align: center;
+    font-family: 'Yeon Sung';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#button{
+    display: block;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 25%;
+    background-color: black;
+    color: rgb(187, 163, 97);
+    font-size: 18px;
+    padding: 13px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+@media(min-width: 500px){
+    #griddiv{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #contentpic{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #dpic:hover, #tpic:hover, #fpic:hover, #hpic:hover{
+        transform: scale(1.09);
+    }
+}
+
+@media(max-width: 500px){
+    #griddiv{
+        margin-top: 7%;
+        margin-bottom: 7%;
+        grid-template-columns: 1fr;
+    }
+    #contentpic{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+    #dpic:hover, #tpic:hover, #fpic:hover, #hpic:hover{
+        transform: scale(1);
+    }
+}
+#serv{
+    display: block;
+}
