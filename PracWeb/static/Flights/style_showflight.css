@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background:center / cover no-repeat url('/static/images/airport.jpg');
+}
+
+#flightgrid{
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-gap: 16px; 
+    grid-template-columns: repeat(3,1fr);
+}
+
+#flights{
+    background-color: rgb(231, 222, 207);
+    height: auto;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+#flights h3, #flights h4{
+    font-family: "Yeon Sung";
+    font-weight: bold;
+}
+
+#flights h4{
+    color:rgb(187, 163, 97);
+}
+
+#formgrid{
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-gap: 16px; 
+    grid-template-columns: repeat(1,1fr);
+}
+
+#form1{
+    width: 40%;
+    background-color: rgb(231, 222, 207);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#form1 h1{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=number],input[type=email]{
+    font-family: 'Yeon Sung';
+    background-color: rgb(187, 163, 97);
+    width: 50%;
+    padding: 12px 20px;
+    margin: 22px 34px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 20px;
+    font-size: medium;
+}
+
+#alertt{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+#button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 30%;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-size: 18px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media(max-width: 830px){
+    #flightgrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #form1{
+        width: 65%;
+    }
+}
+
+@media(max-width: 550px){
+    #flightgrid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #form1{
+        width: 100%;
+    }
+}
+#serv{
+    display: block;
+}
