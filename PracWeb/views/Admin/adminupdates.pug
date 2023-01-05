@@ -1,0 +1,49 @@
+extends adminbase1.pug
+block scripts 
+    script(src="../../static/index.js")
+    script(src="../static/services.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/style_services.css
+    script
+        include ../../static/index.js
+block content
+    div#sections
+        br
+        section#Hotels
+            div#griddiv
+                div#hpic
+                div#contentpic
+                    h1 HOTELS
+                    h4 Providing you with all necessary services and facilities throughout your trip is our responsibility. We will be providing with a few choices of hotels according to what you can afford and would be convenient for your trip. You must go through our website to explore more.
+                    form(action="/adminhotel" autocomplete="off")
+                        button(class=button id="button" type="submit") Add OR Update?
+        br
+        section#Flights
+            div#griddiv
+                div#fpic
+                div#contentpic
+                    h1 FLIGHTS
+                    h4 Travelling comes hand in hand when planning for a trip. But don’t worry, we have it for you. Just provide few details and you will find any available flight. If you don’t want a tour with us, you can still use our service to book a flight. You must go through our website to explore more.
+                    form(action="/adminflight" autocomplete="off")
+                        button(class=button id="button" type="submit") Add OR Update?
+        br
+        section#Tours
+            div#griddiv
+                div#tpic
+                div#contentpic
+                    h1 TOURS
+                    h4 Travel to the mesmerizing spots throughout Pakistan with us. Have a look at the tour packages and book the best and most desired package right now. You’ll travel to Hunza, Naran, Swat, Skardu, Murree and Chitral with best tour guidance and services. You must go through our website to explore more.
+                    form(action="/admintour" autocomplete="off")
+                        button(class=button id="button" type="submit") Update?
+        br
+        section#Deals 
+            div#griddiv
+                div#dpic
+                div#contentpic
+                    h1 TRANSPORTATION
+                    h4 Comfortable and reasonable transportation services will be provided that will make your tour worth rememberable. Just provide with a few details and book your desired transport service which fits you best. You must go through our website to explore more.
+                    form(action="/admintransport" autocomplete="off")
+                        button(class=button id="button" type="submit") Add OR Update?
+        br

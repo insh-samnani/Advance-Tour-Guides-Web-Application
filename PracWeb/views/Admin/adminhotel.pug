@@ -1,0 +1,53 @@
+extends adminbase.pug
+block scripts 
+    script(src="../../static/admin.js")
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/style_admin.css
+    script
+        include ../../static/index.js
+block content
+    section#add
+        div#addform
+                h1 ADD HOTEL
+                h3#h3remove1= message
+                form(action="/hoteladd" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Hotel Name #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Hotel Name" autofocus required)
+                    label(id="location") Hotel Location #[span(id="req") *]
+                    input(type="text" name="location" id="inputlocation" placeholder="Hotel Location" autofocus required)
+                    label(id="rooms") Total Rooms #[span(id="req") *]
+                    input(type="number" name="rooms" id="inputrooms" placeholder="Total Rooms" autofocus required)
+                    label(id="booked") Rooms Booked #[span(id="req") *]
+                    input(type="number" name="booked" id="inputbooked" placeholder="Rooms Booked" autofocus required)
+                    label(id="amount") Price PER Room #[span(id="req") *]
+                    input(type="number" name="amount" id="inputamount" placeholder="Price PER Room" autofocus required)
+                    button(class=button id="button" type="submit") ADD
+    section#update 
+        div#addform
+                h1 UPDATE HOTEL
+                h3#h3remove2= message
+                form(action="/hotelupdate" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Hotel Name #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Hotel Name" autofocus required)
+                    label(id="location") Hotel Location #[span(id="req") *]
+                    input(type="text" name="location" id="inputlocation" placeholder="Hotel Location" autofocus required)
+                    label(id="rooms") Total Rooms
+                    input(type="number" name="rooms" id="inputrooms" placeholder="Total Rooms" autofocus)
+                    label(id="booked") Rooms Booked
+                    input(type="number" name="booked" id="inputbooked" placeholder="Rooms Booked" autofocus)
+                    label(id="amount") Price PER Room
+                    input(type="number" name="amount" id="inputamount" placeholder="Price PER Room" autofocus)
+                    button(class=button id="button" type="submit") UPDATE 
+    section#delete 
+        div#addform
+                h1 DELETE HOTEL
+                h3#h3remove3= message
+                form(action="/hoteldelete" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Hotel Name #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Hotel Name" autofocus required)
+                    label(id="location") Hotel Location #[span(id="req") *]
+                    input(type="text" name="location" id="inputlocation" placeholder="Hotel Location" autofocus required)
+                    button(class=button id="button" type="submit") DELETE 

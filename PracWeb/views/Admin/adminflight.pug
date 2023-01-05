@@ -1,0 +1,83 @@
+extends adminbase.pug
+block scripts 
+    script(src="../../static/admin.js")
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/style_admin.css
+    script
+        include ../../static/index.js
+block content
+    section#add
+        div#addform
+                h1 ADD FLIGHT
+                h3#h3remove1= message
+                form(action="/flightadd" id="signupadd" method="post" autocomplete="off")
+                    label(id="airport") AIRLINE NAME #[span(id="req") *]
+                    input(type="text" name="airport" id="inputairport" placeholder="Airline Name" autofocus required)
+                    label(id="departure") FLIGHT DEPARTURE #[span(id="req") *]
+                    input(type="text" name="departure" id="inputdeparture" placeholder="Flight Departure" autofocus required)
+                    label(id="destination") FLIGHT DESTINATION #[span(id="req") *]
+                    input(type="text" name="destination" id="inputdestination" placeholder="Flight Destination" autofocus required)
+                    label(id="date") FLIGHT DATE #[span(id="req") *]
+                    br
+                    input(type="date" name="date" isd="inputdate" placeholder="Flight Date" autofocus required)
+                    br 
+                    label(id="time") FLIGHT TIME #[span(id="req") *]
+                    br
+                    input(type="time" name="time" isd="inputtime" placeholder="Flight Time" autofocus required)
+                    br 
+                    label(id="amount") TICKED PRICE #[span(id="req") *]
+                    input(type="number" name="amount" id="inputamount" placeholder="Ticked Price" autofocus required)
+                    label(id="available") SEATS AVAILABLE #[span(id="req") *]
+                    input(type="number" name="available" id="inputavailable" placeholder="Seats Available" autofocus required)
+                    label(id="booked") SEATS BOOKED #[span(id="req") *]
+                    input(type="number" name="booked" id="inputbooked" placeholder="Seats Booked" autofocus required)
+                    button(class=button id="button" type="submit") ADD
+    section#update 
+        div#addform
+                h1 UPDATE FLIGHT
+                h3#h3remove2= message
+                form(action="/flightupdate" id="signupadd" method="post" autocomplete="off")
+                    label(id="airport") AIRLINE NAME #[span(id="req") *]
+                    input(type="text" name="airport" id="inputairport" placeholder="Airline Name" autofocus required)
+                    label(id="departure") FLIGHT DEPARTURE #[span(id="req") *]
+                    input(type="text" name="departure" id="inputdeparture" placeholder="Flight Departure" autofocus required)
+                    label(id="destination") FLIGHT DESTINATION #[span(id="req") *]
+                    input(type="text" name="destination" id="inputdestination" placeholder="Flight Destination" autofocus required)
+                    label(id="date") FLIGHT DATE #[span(id="req") *]
+                    br 
+                    input(type="date" name="date" isd="inputdate" placeholder="Flight Date" autofocus required)
+                    br 
+                    label(id="time") FLIGHT TIME #[span(id="req") *]
+                    br
+                    input(type="time" name="time" isd="inputtime" placeholder="Flight Time" autofocus required)
+                    br
+                    label(id="amount") TICKED PRICE
+                    input(type="number" name="amount" id="inputamount" placeholder="Ticked Price" autofocus)
+                    label(id="available") SEATS AVAILABLE
+                    input(type="number" name="available" id="inputavailable" placeholder="Seats Available" autofocus)
+                    label(id="booked") SEATS BOOKED
+                    input(type="number" name="booked" id="inputbooked" placeholder="Seats Booked" autofocus)
+                    button(class=button id="button" type="submit") UPDATE
+    section#delete 
+        div#addform
+                h1 DELETE FLIGHT
+                h3#h3remove3= message
+                form(action="/flightdelete" id="signupadd" method="post" autocomplete="off")
+                    label(id="airport") AIRLINE NAME #[span(id="req") *]
+                    input(type="text" name="airport" id="inputairport" placeholder="Airline Name" autofocus required)
+                    label(id="departure") FLIGHT DEPARTURE #[span(id="req") *]
+                    input(type="text" name="departure" id="inputdeparture" placeholder="Flight Departure" autofocus required)
+                    label(id="destination") FLIGHT DESTINATION #[span(id="req") *]
+                    input(type="text" name="destination" id="inputdestination" placeholder="Flight Destination" autofocus required)
+                    label(id="date") FLIGHT DATE #[span(id="req") *]
+                    br
+                    input(type="date" name="date" isd="inputdate" placeholder="Flight Date" autofocus required)
+                    br 
+                    label(id="time") FLIGHT TIME #[span(id="req") *]
+                    br
+                    input(type="time" name="time" isd="inputtime" placeholder="Flight Time" autofocus required)
+                    br 
+                    button(class=button id="button" type="submit") DELETE 

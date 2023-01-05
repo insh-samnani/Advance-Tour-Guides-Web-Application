@@ -1,0 +1,36 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        block scripts 
+        block style
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/homeadmin') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/aboutadmin') About Us]
+                li #[a(href='/contact') Join Us]
+                li #[a(href='/logout' onclick="myFunc1()") Log Out]
+                li#serv #[a(href='/adminup') Services]
+        nav#new  
+            ul
+                div#logoadmin 
+                    img(src="../../static/images/admin.png")
+                    | ADMIN
+                li #[a(href='/adminhotel' onclick="showAdd(); return false;") Add]
+                li #[a(href='/adminhotel' onclick="showUpdate(); return false;") Update]
+                li #[a(href='/adminhotel' onclick="showDelete(); return false;") Delete]
+        section#adminintro
+            div #[h1 WELCOME ADMIN]
+            div.h3class #[h3 Be like Chimpanzees While Playing With The Data]
+        block content
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com
+        script
+            include ../../static/index.js

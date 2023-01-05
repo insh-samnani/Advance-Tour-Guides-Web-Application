@@ -1,0 +1,59 @@
+extends adminbase.pug
+block scripts 
+    script(src="../../static/admin.js")
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/style_admin.css
+    script
+        include ../../static/index.js
+block content
+    section#add
+        div#addform
+                h1 ADD TRANSPORT
+                h3#h3remove1= message
+                form(action="/transportadd" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Transport Mode #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Transport Mode" autofocus required)
+                    label(id="brand") Transport Brand #[span(id="req") *]
+                    input(type="text" name="brand" id="inputbrand" placeholder="Transport Brand" autofocus required)
+                    label(id="seats") Total Seats #[span(id="req") *]
+                    input(type="number" name="seats" id="inputseats" placeholder="Total Seats" autofocus required)
+                    label(id="amount") Price PER Seat #[span(id="req") *]
+                    input(type="number" name="amount" id="inputamount" placeholder="Price PER Seat" autofocus required)
+                    label(id="status") Transport Status #[span(id="req") *]
+                    input(type="text" name="status" id="inputstatus" placeholder="Transport Status" autofocus required)
+                    label(id="checking") AC? #[input(type="checkbox" id="checking" name="checking" autofocus)] #[span(id="req") *]
+                    br
+                    button(class=button id="button" type="submit") ADD
+    section#update 
+        div#addform
+                h1 UPDATE TRANSPORT
+                h3#h3remove2= message
+                form(action="/transportupdate" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Transport Mode #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Transport Mode" autofocus required)
+                    label(id="brand") Transport Brand #[span(id="req") *]
+                    input(type="text" name="brand" id="inputbrand" placeholder="Transport Brand" autofocus required)
+                    label(id="seats") Total Seats
+                    input(type="number" name="seats" id="inputseats" placeholder="Total Seats" autofocus)
+                    label(id="amount") Price PER Seat
+                    input(type="number" name="amount" id="inputamount" placeholder="Price PER Seat" autofocus)
+                    label(id="status") Transport Status
+                    input(type="text" name="status" id="inputstatus" placeholder="Transport Status" autofocus)
+                    label(id="checking") AC? #[input(type="checkbox" id="checking" name="checking" autofocus)] #[span(id="req") *]
+                    br
+                    button(class=button id="button" type="submit") UPDATE
+    section#delete 
+        div#addform
+                h1 DELETE TRANSPORT
+                h3#h3remove3= message
+                form(action="/transportdelete" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Transport Mode #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Transport Mode" autofocus required)
+                    label(id="brand") Transport Brand #[span(id="req") *]
+                    input(type="text" name="brand" id="inputbrand" placeholder="Transport Brand" autofocus required)
+                    label(id="checking") AC? #[input(type="checkbox" id="checking" name="checking" autofocus)] #[span(id="req") *]
+                    br
+                    button(class=button id="button" type="submit") DELETE 

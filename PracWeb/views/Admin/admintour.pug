@@ -1,0 +1,46 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        style
+            include ../../static/style.css
+            include ../../static/style_admin1.css
+        script
+            include ../../static/index.js
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/homeadmin') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/aboutadmin') About Us]
+                li #[a(href='/contact') Join Us]
+                li #[a(href='/logout' onclick="myFunc1()") Log Out]
+                li#serv #[a(href='/adminup') Services]
+        nav#new  
+            ul
+                div#logoadmin 
+                    img(src="../../static/images/admin.png")
+                    | ADMIN
+                li #[a(href='/admintour') Update]
+        section#adminintro
+            div #[h1 WELCOME ADMIN]
+            div.h3class #[h3 Be like Chimpanzees While Playing With The Data]
+        section#update 
+            div#addform
+                h1 UPDATE TOUR
+                h3#h3remove2= message
+                form(action="/tourupdate" id="signupadd" method="post" autocomplete="off")
+                    label(id="name") Tour ID #[span(id="req") *]
+                    input(type="text" name="id" id="inputname" placeholder="Tour ID" autofocus required)
+                    label(id="name") Tour Location #[span(id="req") *]
+                    input(type="text" name="location" id="inputname" placeholder="Tour Location" autofocus required)
+                    label(id="seats") Price
+                    input(type="number" name="price" id="inputseats" placeholder="Price" autofocus)
+                    br
+                    button(class=button id="button" type="submit") UPDATE
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com

@@ -1,0 +1,116 @@
+extends adminbase1.pug
+block scripts 
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/style_adminhome.css
+    script
+        include ../../static/index.js
+block content
+    section#vision 
+        h3.vision ATG REVENUE
+    section#visions 
+        div.vision1
+            h1 TOURS
+            div.box
+                div.boximg
+                    img(src="../static/images/Deal1.png")
+                div.content
+                    p #[strong TOURS] are provided with #[strong MAXIMUM] discounts. Still we are able to generate REVENUE of:
+                    br
+                    h2.argument= revenuelisttour.tour
+        div.vision1
+            h1 HOTELS
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    p #[strong HOTELS] are provided with #[strong MAXIMUM] discounts. Still we are able to generate REVENUE of:
+                    br
+                    h2.argument= revenuelisthotel.hotel
+        div.vision1
+            h1 FLIGHTS
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    p #[strong FLIGHTS] are provided with #[strong MAXIMUM] discounts. Still we are able to generate REVENUE of:
+                    br
+                    h2.argument= revenuelist.flight
+        div.vision1
+            h1 TRANSPORT
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    p #[strong TRANSPORT] are provided with #[strong MAXIMUM] discounts. Still we are able to generate REVENUE of:
+                    br
+                    h2.argument= revenuelisttransport.transport
+    section#vision 
+        h3.vision ATG TOTAL BOOKINGS
+    section#visions1
+        div.vision11
+            h1 TOURS
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    form(action="/admin2" method="post" autocomplete="off")
+                        label(id="idflight") #[strong TOUR ID] #[span(id="req") *]
+                        input(type="text" name="idtour" id="inputidflight" placeholder="Tour ID" autofocus required)
+                        br
+                        button(class=button id="inputidflight" type="submit" ) FIND?
+                    h3= revenuelisttour.group
+                    h3.updates= revenuelisttour.flightbook
+                    h3= revenuelisttour.ind
+                    h3.updates= revenuelisttour.flightbookind
+        div.vision11
+            h1 HOTELS
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    form(action="/admin4" method="post" autocomplete="off")
+                        label(id="idflight") #[strong HOTEL ID] #[span(id="req") *]
+                        input(type="text" name="idhotel" id="inputidflight" placeholder="Hotel ID" autofocus required)
+                        br
+                        button(class=button id="inputidflight" type="submit" ) FIND?
+                    h3= revenuelisthotel.group
+                    h3.updates= revenuelisthotel.flightbook
+                    h3= revenuelisthotel.ind
+                    h3.updates= revenuelisthotel.flightbookind
+        div.vision11
+            h1 FLIGHTS
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    form(action="/admin1" method="post" autocomplete="off")
+                        label(id="idflight") #[strong FLIGHT ID] #[span(id="req") *]
+                        input(type="text" name="idflight" id="inputidflight" placeholder="Flight ID" autofocus required)
+                        br
+                        button(class=button id="inputidflight" type="submit" ) FIND?
+                    h3= revenuelist.group
+                    h3.updates= revenuelist.flightbook
+                    h3= revenuelist.ind
+                    h3.updates= revenuelist.flightbookind
+        div.vision11
+            h1 TRANSPORT
+            div.box
+                div.boximg
+                    img(src="../static/images/Flight1.png")
+                div.content
+                    form(action="/admin3" method="post" autocomplete="off")
+                        label(id="idflight") #[strong TRANSPORT ID] #[span(id="req") *]
+                        input(type="text" name="idtransport" id="inputidflight" placeholder="Transport ID" autofocus required)
+                        br
+                        button(class=button id="inputidflight" type="submit" ) FIND?
+                    h3= revenuelisttransport.group
+                    h3.updates= revenuelisttransport.flightbook
+                    h3= revenuelisttransport.ind
+                    h3.updates= revenuelisttransport.flightbookind
+    form(action="/adminup" autocomplete="off")
+        button(class=button id="inupde" type="submit" ) CURD?
+        
+        
