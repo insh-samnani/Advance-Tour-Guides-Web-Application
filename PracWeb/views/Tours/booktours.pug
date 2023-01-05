@@ -1,0 +1,32 @@
+extends ../base.pug
+block scripts 
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/Tours/style_booktours.css
+block content
+    section#flightintro
+        div #[h1 WE HAVE PLANNED FOR YOU]
+        div.h3class #[h3 Please Have A Sweet Look!!!]
+    section#flightsearch
+        div#flightform
+            div#agenda
+        div#flightform1
+            h1#flightintroh1 BOOK TOUR NOW
+            h2 ATLEAST Fill Out The Required Information !!!
+            div#showbookings
+                form(action="/showmytourbook" method="get" autocomplete="off")
+                    button(class=button id="bookingsbutton" type="submit") MY BOOKED TOURS
+            h3= message
+            form(action="/tourcheck" id="signupform" method="post" autocomplete="off")
+                label(id="departure") YOUR TOUR PACKAGE ID #[span(id="req") *]
+                input(type="number" name="tourid" id="inputdeparture" placeholder="Tour ID" autofocus required)
+                br
+                label(id="destination") NUMBER OF CHILDREN #[span(id="req") *]
+                input(type="number" name="countch" id="inputdestination" placeholder="Children" autofocus required)
+                br
+                label(id="destination") NUMBER OF ADULTS #[span(id="req") *]
+                input(type="number" name="countad" id="inputdestination" placeholder="Adults" autofocus required)
+                br
+                button(class=button id="button" type="submit") BOOK

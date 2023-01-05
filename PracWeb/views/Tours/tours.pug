@@ -1,0 +1,37 @@
+extends ../base.pug
+block scripts 
+    script(src="../../static/index.js")
+block style
+    style
+        include ../../static/style.css
+        include ../../static/Tours/style_tour.css
+block content
+    section#tourintro
+        div #[h1 WE HAVE PLANNED FOR YOU]
+        div.h3class #[h3 Please Have A Sweet Look!!!]
+        h2.trigger= message
+    section#packages 
+        div#package1
+            div#package
+                h1 #[a(href='/naran') NARAN KAGHAN]
+                h4 7 DAYS TOUR
+        div#package2
+            div#package
+                h1 #[a(href='/chitral') CHITRAL]
+                h4 7 DAYS TOUR
+        div#package3
+            div#package
+                h1 #[a(href='/hunza') HUNZA]
+                h4 7 DAYS TOUR
+        div#package4
+            div#package
+                h1 #[a(href='/murree') MURREE]
+                h4 8 DAYS TOUR
+        div#package5
+            div#package
+                h1 #[a(href='/swat') SWAT]
+                h4 8 DAYS TOUR
+        div#package6
+            div#package
+                h1 #[a(href='/skardu') SKARDU]
+                h4 7 DAYS TOUR
