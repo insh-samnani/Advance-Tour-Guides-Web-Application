@@ -1,0 +1,50 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../../static/style.css
+            include ../../static/Tours/style_showmybookings.css
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/about') About Us]
+                li #[a(href='/contact') Join Us]
+                li #[a(href='/logout') Log Out]
+                li#serv #[a(href='/services') Services]
+        h1= message 
+        div#mybookings
+            for flightt in flightlist
+                div#tablediv
+                    table#table1
+                        tr
+                            th User ID 
+                            th User Email 
+                            th Hotel ID 
+                            th Name
+                            th Location
+                            th Total Rooms
+                            th Total Cost 
+                        tr 
+                            td= flightt.UserID
+                            td= flightt.UserEmail
+                            td= flightt.HotelID
+                            td= flightt.Name
+                            td= flightt.Location
+                            td= flightt.TotalRooms
+                            td= flightt.Amount
+        div#form1
+            h1 CANCEL HOTEL
+            form(action="/cancelhotel" method="post" autocomplete="off")
+                input(type="number" name="id" id="inputid" placeholder="Hotel ID" autofocus required)
+                input(type="number" name="tourid" id="inputbookingad" placeholder="Tour ID" autofocus required)
+                input(type="number" name="rooms" id="inputbookingad" placeholder="Rooms to Cancel" autofocus required)
+                br
+                button(class=button id="button" type="submit") CANCEL NOW
