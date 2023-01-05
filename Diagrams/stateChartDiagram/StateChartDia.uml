@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3NE84HIAEe2Pmbyr97CLXg" name="StateChartDia">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_3OjjkHIAEe2Pmbyr97CLXg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_3NZF8HIAEe2Pmbyr97CLXg" name="ADVANCE_TOUR_GUIDES">
+    <region xmi:type="uml:Region" xmi:id="_3OEbYHIAEe2Pmbyr97CLXg">
+      <transition xmi:type="uml:Transition" xmi:id="_TsVQUHJEEe2AmIW173vzTg" name="starting" source="__PYmcHIAEe2Pmbyr97CLXg" target="_9ucYIHIAEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_WoEBoHJEEe2AmIW173vzTg" name="startingOfUser" source="_9ucYIHIAEe2Pmbyr97CLXg" target="_YDDUYHIBEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0bSkYHJFEe2AmIW173vzTg" name="no(looping)" source="_ojdawHJFEe2AmIW173vzTg" target="_iESIwHIBEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7vGwQHJFEe2AmIW173vzTg" name="yes" source="_ojdawHJFEe2AmIW173vzTg" target="_cwKuU3ICEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_RhdCQHJGEe2AmIW173vzTg" source="_cwKuU3ICEe2Pmbyr97CLXg" target="_-3pBkHIQEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_9FUf0HJGEe2AmIW173vzTg" name="yes" source="_1Wd9wHJGEe2AmIW173vzTg" target="_tdAponIDEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_H0uo0HJHEe2AmIW173vzTg" name="no(looping)" source="_1Wd9wHJGEe2AmIW173vzTg" target="_iESIwHIBEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MfMXYHJIEe2AmIW173vzTg" name="preferenceOfFlights" source="_CfAnU3IFEe2Pmbyr97CLXg" target="_sS-PsHIUEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_lwoUgHJKEe2AmIW173vzTg" source="_Hd3-8HIOEe2Pmbyr97CLXg" target="_tdAponIDEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UdJlEHJLEe2AmIW173vzTg" name="prefernceOfTour" source="_oseR0HIOEe2Pmbyr97CLXg" target="_sS-PsHIUEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_mYZQYHJQEe2AmIW173vzTg" name="staringOfTourGuide" source="_9ucYIHIAEe2Pmbyr97CLXg" target="_dGHyYHIREe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yZKTkHJQEe2AmIW173vzTg" name="startingOfAdmin" source="_9ucYIHIAEe2Pmbyr97CLXg" target="_2rITIHIQEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Nk0-MHJSEe2AmIW173vzTg" name="preferenceOfHotels" source="_nBF4oHIPEe2Pmbyr97CLXg" target="_sS-PsHIUEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hCi-UHJWEe2AmIW173vzTg" name="prefernceOfTransport" source="_EKmm0HJPEe2AmIW173vzTg" target="_9zfLAHISEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_WRwQcHKyEe2QT8hMqOQJAg" name="no(looping)" source="_JVSaAHKyEe2QT8hMqOQJAg" target="_5S_tQHIQEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_knwFoHKyEe2QT8hMqOQJAg" name="yes" source="_JVSaAHKyEe2QT8hMqOQJAg" target="_U6WgQHIQEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_DVWl8HK0Ee2QT8hMqOQJAg" name="yes" source="_AVlpMHK0Ee2QT8hMqOQJAg" target="_qcX6MHKzEe2QT8hMqOQJAg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GuS3sHK0Ee2QT8hMqOQJAg" name="no(looping)" source="_AVlpMHK0Ee2QT8hMqOQJAg" target="_iESIwHIBEe2Pmbyr97CLXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OZ3xYHK2Ee2QT8hMqOQJAg" name="TourGuideCompletesOperations" source="_nL7HQHIdEe2hu-NN6p4cWg" target="_eaHd8HIeEe2hu-NN6p4cWg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_9ucYIHIAEe2Pmbyr97CLXg" name="IDLE"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="__PYmcHIAEe2Pmbyr97CLXg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_W1_rYHIBEe2Pmbyr97CLXg" name="USER">
+        <region xmi:type="uml:Region" xmi:id="_YDBfMHIBEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_bXtnoHJEEe2AmIW173vzTg" source="_YDDUYHIBEe2Pmbyr97CLXg" target="_lrL-AHIBEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_p_a34HJEEe2AmIW173vzTg" source="_iESIwHIBEe2Pmbyr97CLXg" target="_RblbsHICEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ap7CoHJGEe2AmIW173vzTg" source="_-3pBkHIQEe2Pmbyr97CLXg" target="_iESIwHIBEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dI3xUHJGEe2AmIW173vzTg" source="_iESIwHIBEe2Pmbyr97CLXg" target="_ixuysHIDEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_T_BJgHJJEe2AmIW173vzTg" source="_tnpjoHIUEe2Pmbyr97CLXg" target="_APtV0HITEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_3irZ0HJKEe2AmIW173vzTg" name="bookingsReq" source="_sS-PsHIUEe2Pmbyr97CLXg" target="_9zfLAHISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_fb0PcHK2Ee2QT8hMqOQJAg" name="userCompleteOperations" source="_tnpjoHIUEe2Pmbyr97CLXg" target="_eaHd8HIeEe2hu-NN6p4cWg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_YDDUYHIBEe2Pmbyr97CLXg" name="signUp"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iESIwHIBEe2Pmbyr97CLXg" name="inputValues"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-3pBkHIQEe2Pmbyr97CLXg" name="logIn"/>
+          <subvertex xmi:type="uml:State" xmi:id="_sS-PsHIUEe2Pmbyr97CLXg" name="performBookings"/>
+          <subvertex xmi:type="uml:State" xmi:id="_tnpjoHIUEe2Pmbyr97CLXg" name="performCancellations"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_lFP_YHIBEe2Pmbyr97CLXg" name="SYSTEM">
+        <region xmi:type="uml:Region" xmi:id="_lrKv4HIBEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_kjzjwHJEEe2AmIW173vzTg" name="userValues" source="_lrL-AHIBEe2Pmbyr97CLXg" target="_iESIwHIBEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tYIDoHJFEe2AmIW173vzTg" name="userRecordExistence" source="_RblbsHICEe2Pmbyr97CLXg" target="_ojdawHJFEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_pkoHYHJGEe2AmIW173vzTg" source="_ixuysHIDEe2Pmbyr97CLXg" target="_miEBAHIUEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_6ohJYHJKEe2AmIW173vzTg" source="_9zfLAHISEe2Pmbyr97CLXg" target="_s9cNMHINEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1fj2EHJLEe2AmIW173vzTg" name="bookTourRes" source="_9zfLAHISEe2Pmbyr97CLXg" target="_yvnxwHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_kwEkgHJMEe2AmIW173vzTg" source="_APtV0HITEe2Pmbyr97CLXg" target="_Hd3-8HIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Tv_cwHJOEe2AmIW173vzTg" name="canceledTour" source="_APtV0HITEe2Pmbyr97CLXg" target="_6mMscHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_lXhXUHJSEe2AmIW173vzTg" source="_9zfLAHISEe2Pmbyr97CLXg" target="_vUR20HIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_w_BwgHJTEe2AmIW173vzTg" name="cancelledHotels" source="_APtV0HITEe2Pmbyr97CLXg" target="_0T_5IHIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_6ZimUHJXEe2AmIW173vzTg" name="bookTransportRes" source="_9zfLAHISEe2Pmbyr97CLXg" target="_Jv40UHJPEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Vv3BwHJZEe2AmIW173vzTg" name="cancelledTransport" source="_APtV0HITEe2Pmbyr97CLXg" target="_LKkpoHJPEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_K_TMwHJaEe2AmIW173vzTg" source="_lrL-AHIBEe2Pmbyr97CLXg" target="_g0vZMHIREe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_OznD4HKyEe2QT8hMqOQJAg" name="adminRecordExistence" source="_RblbsHICEe2Pmbyr97CLXg" target="_JVSaAHKyEe2QT8hMqOQJAg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_OQT3oHK0Ee2QT8hMqOQJAg" name="tourGuideExistence?" source="_RblbsHICEe2Pmbyr97CLXg" target="_AVlpMHK0Ee2QT8hMqOQJAg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_uKEegHK0Ee2QT8hMqOQJAg" source="_399iEHISEe2Pmbyr97CLXg" target="_VjbAgHISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ZvdmEHK1Ee2QT8hMqOQJAg" source="_U6ydwHITEe2Pmbyr97CLXg" target="_YuDUAHITEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_lrL-AHIBEe2Pmbyr97CLXg" name="askCredentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_RblbsHICEe2Pmbyr97CLXg" name="checkRequiredFields"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ixuysHIDEe2Pmbyr97CLXg" name="checkCredentials"/>
+          <subvertex xmi:type="uml:State" xmi:id="_399iEHISEe2Pmbyr97CLXg" name="CURD"/>
+          <subvertex xmi:type="uml:State" xmi:id="_9zfLAHISEe2Pmbyr97CLXg" name="Book"/>
+          <subvertex xmi:type="uml:State" xmi:id="_APtV0HITEe2Pmbyr97CLXg" name="Cancel"/>
+          <subvertex xmi:type="uml:State" xmi:id="_U6ydwHITEe2Pmbyr97CLXg" name="calculateRevenue"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0dVegHITEe2Pmbyr97CLXg" name="displayRevenue"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_bGGZMHICEe2Pmbyr97CLXg" name="DATABASE">
+        <region xmi:type="uml:Region" xmi:id="_cwJgMHICEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_2ZikUHJGEe2AmIW173vzTg" source="_miEBAHIUEe2Pmbyr97CLXg" target="_1Wd9wHJGEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_sHNG8HJIEe2AmIW173vzTg" source="_25e_kHINEe2Pmbyr97CLXg" target="_0kym0HISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_C7VesHJMEe2AmIW173vzTg" source="_IvgwgHIPEe2Pmbyr97CLXg" target="_aT2CkHISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="__jWLAHJSEe2AmIW173vzTg" source="_7Q5Z0HIPEe2Pmbyr97CLXg" target="_xBVuMHISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_UxubAHJYEe2AmIW173vzTg" source="_O_lyAHIQEe2Pmbyr97CLXg" target="_QE7q0HJPEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_9Yn-QHKyEe2QT8hMqOQJAg" source="_U6WgQHIQEe2Pmbyr97CLXg" target="_8h218HIQEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_5g3NEHKzEe2QT8hMqOQJAg" source="_qcX6MHKzEe2QT8hMqOQJAg" target="_ibqTsHIREe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_AfmrYHK1Ee2QT8hMqOQJAg" source="_VjbAgHISEe2Pmbyr97CLXg" target="_5mygEHIdEe2hu-NN6p4cWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_s4Qb4HK1Ee2QT8hMqOQJAg" source="_YuDUAHITEe2Pmbyr97CLXg" target="_0dVegHITEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cwKuU3ICEe2Pmbyr97CLXg" name="insertUserRecord"/>
+          <subvertex xmi:type="uml:State" xmi:id="_25e_kHINEe2Pmbyr97CLXg" name="FlightsBooked"/>
+          <subvertex xmi:type="uml:State" xmi:id="_MNehoHIOEe2Pmbyr97CLXg" name="DeleteFlights"/>
+          <subvertex xmi:type="uml:State" xmi:id="_IvgwgHIPEe2Pmbyr97CLXg" name="ToursBooked"/>
+          <subvertex xmi:type="uml:State" xmi:id="_NXxVEHIPEe2Pmbyr97CLXg" name="DeleteTours"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7Q5Z0HIPEe2Pmbyr97CLXg" name="HotelsBooked"/>
+          <subvertex xmi:type="uml:State" xmi:id="_MgNlgHIQEe2Pmbyr97CLXg" name="DeleteHotels"/>
+          <subvertex xmi:type="uml:State" xmi:id="_O_lyAHIQEe2Pmbyr97CLXg" name="TransportsBooked"/>
+          <subvertex xmi:type="uml:State" xmi:id="_R8JpwHIQEe2Pmbyr97CLXg" name="DeleteTransport"/>
+          <subvertex xmi:type="uml:State" xmi:id="_U6WgQHIQEe2Pmbyr97CLXg" name="insertAdminRecord"/>
+          <subvertex xmi:type="uml:State" xmi:id="_VjbAgHISEe2Pmbyr97CLXg" name="CURDoperations"/>
+          <subvertex xmi:type="uml:State" xmi:id="_YuDUAHITEe2Pmbyr97CLXg" name="Revenue"/>
+          <subvertex xmi:type="uml:State" xmi:id="_miEBAHIUEe2Pmbyr97CLXg" name="RecordExist"/>
+          <subvertex xmi:type="uml:State" xmi:id="_qcX6MHKzEe2QT8hMqOQJAg" name="insertTourGuideRecord"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_1PEGIHICEe2Pmbyr97CLXg" name="SERVICES">
+        <region xmi:type="uml:Region" xmi:id="_tc_bgHIDEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_1i8eEHJHEe2AmIW173vzTg" source="_tdAponIDEe2Pmbyr97CLXg" target="_vZ8fgHJHEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_4B6a4HJHEe2AmIW173vzTg" source="_vZ8fgHJHEe2AmIW173vzTg" target="_0XBOYHIDEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_5SpC8HJHEe2AmIW173vzTg" source="_vZ8fgHJHEe2AmIW173vzTg" target="_6shX4HIDEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="__uJt0HJHEe2AmIW173vzTg" source="_6shX4HIDEe2Pmbyr97CLXg" target="_CfAnU3IFEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_HbXw0HJLEe2AmIW173vzTg" source="_0XBOYHIDEe2Pmbyr97CLXg" target="_oseR0HIOEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_tdAponIDEe2Pmbyr97CLXg" name="chooseBetween"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0XBOYHIDEe2Pmbyr97CLXg" name="bookTour"/>
+          <subvertex xmi:type="uml:State" xmi:id="_6shX4HIDEe2Pmbyr97CLXg" name="bookFlight"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_vZ8fgHJHEe2AmIW173vzTg" name="selectAny" kind="choice"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_CHp3QHIFEe2Pmbyr97CLXg" name="FLIGHTS">
+        <region xmi:type="uml:Region" xmi:id="_Ce_ZMXIFEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_hqX7sHJIEe2AmIW173vzTg" source="_s9cNMHINEe2Pmbyr97CLXg" target="_25e_kHINEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_8ORRIHJIEe2AmIW173vzTg" source="_0kym0HISEe2Pmbyr97CLXg" target="_6a_8sHJIEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_JbEpoHJJEe2AmIW173vzTg" name="yes" source="_6a_8sHJIEe2AmIW173vzTg" target="_tnpjoHIUEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_g65UoHJKEe2AmIW173vzTg" name="no" source="_6a_8sHJIEe2AmIW173vzTg" target="_tdAponIDEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_gUg_MHJMEe2AmIW173vzTg" source="_Hd3-8HIOEe2Pmbyr97CLXg" target="_MNehoHIOEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_CfAnU3IFEe2Pmbyr97CLXg" name="displayFlights"/>
+          <subvertex xmi:type="uml:State" xmi:id="_s9cNMHINEe2Pmbyr97CLXg" name="bookFlights"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Hd3-8HIOEe2Pmbyr97CLXg" name="cancelFlight"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0kym0HISEe2Pmbyr97CLXg" name="FlightsUpdated"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_6a_8sHJIEe2AmIW173vzTg" name="cancelFlights?" kind="choice"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_n-2W0HIOEe2Pmbyr97CLXg" name="TOURS">
+        <region xmi:type="uml:Region" xmi:id="_osccoHIOEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_gmdgQHJLEe2AmIW173vzTg" source="_yvnxwHIOEe2Pmbyr97CLXg" target="_IvgwgHIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_9ZswMHJNEe2AmIW173vzTg" source="_aT2CkHISEe2Pmbyr97CLXg" target="_5tcg4HJNEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_D66acHJOEe2AmIW173vzTg" name="no" source="_5tcg4HJNEe2AmIW173vzTg" target="_roCEAHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_LI2AwHJOEe2AmIW173vzTg" name="yes" source="_5tcg4HJNEe2AmIW173vzTg" target="_tnpjoHIUEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Zkw3wHJOEe2AmIW173vzTg" source="_6mMscHIOEe2Pmbyr97CLXg" target="_NXxVEHIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_oF3wwHJOEe2AmIW173vzTg" source="_6mMscHIOEe2Pmbyr97CLXg" target="_roCEAHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_zA0bYHJOEe2AmIW173vzTg" source="_roCEAHIOEe2Pmbyr97CLXg" target="_tTd3AHJOEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_0YpJ8HJOEe2AmIW173vzTg" source="_tTd3AHJOEe2AmIW173vzTg" target="_u4-QUHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1rZLQHJOEe2AmIW173vzTg" source="_tTd3AHJOEe2AmIW173vzTg" target="_w6-kUHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_G6nI8HJSEe2AmIW173vzTg" source="_w6-kUHIOEe2Pmbyr97CLXg" target="_nBF4oHIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_WC5Z4HJWEe2AmIW173vzTg" source="_u4-QUHIOEe2Pmbyr97CLXg" target="_EKmm0HJPEe2AmIW173vzTg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_oseR0HIOEe2Pmbyr97CLXg" name="displayTours"/>
+          <subvertex xmi:type="uml:State" xmi:id="_roCEAHIOEe2Pmbyr97CLXg" name="chooseBetween"/>
+          <subvertex xmi:type="uml:State" xmi:id="_u4-QUHIOEe2Pmbyr97CLXg" name="bookTransport"/>
+          <subvertex xmi:type="uml:State" xmi:id="_w6-kUHIOEe2Pmbyr97CLXg" name="bookHotel"/>
+          <subvertex xmi:type="uml:State" xmi:id="_yvnxwHIOEe2Pmbyr97CLXg" name="bookTour"/>
+          <subvertex xmi:type="uml:State" xmi:id="_6mMscHIOEe2Pmbyr97CLXg" name="cancelTour"/>
+          <subvertex xmi:type="uml:State" xmi:id="_aT2CkHISEe2Pmbyr97CLXg" name="tourUpdates"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_5tcg4HJNEe2AmIW173vzTg" name="cancelTour?" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_tTd3AHJOEe2AmIW173vzTg" name="selectAny" kind="choice"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_UScBIHIPEe2Pmbyr97CLXg" name="HOTELS">
+        <region xmi:type="uml:Region" xmi:id="_nBDcYHIPEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_way3gHJSEe2AmIW173vzTg" source="_vUR20HIPEe2Pmbyr97CLXg" target="_7Q5Z0HIPEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_NOFcsHJTEe2AmIW173vzTg" source="_xBVuMHISEe2Pmbyr97CLXg" target="_IsAYoHJTEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_XJxpwHJTEe2AmIW173vzTg" name="no" source="_IsAYoHJTEe2AmIW173vzTg" target="_roCEAHIOEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_h-nFUHJTEe2AmIW173vzTg" name="yes" source="_IsAYoHJTEe2AmIW173vzTg" target="_APtV0HITEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_DXjnAHJUEe2AmIW173vzTg" source="_0T_5IHIPEe2Pmbyr97CLXg" target="_MgNlgHIQEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_nBF4oHIPEe2Pmbyr97CLXg" name="displayHotels"/>
+          <subvertex xmi:type="uml:State" xmi:id="_vUR20HIPEe2Pmbyr97CLXg" name="bookHotels"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0T_5IHIPEe2Pmbyr97CLXg" name="cancelHotels"/>
+          <subvertex xmi:type="uml:State" xmi:id="_xBVuMHISEe2Pmbyr97CLXg" name="hotelsUpdated"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_IsAYoHJTEe2AmIW173vzTg" name="cancelHotel?" kind="choice"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_1NEZsHIQEe2Pmbyr97CLXg" name="ADMIN">
+        <region xmi:type="uml:Region" xmi:id="_2rGd8HIQEe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_ASbc8HKzEe2QT8hMqOQJAg" source="_8h218HIQEe2Pmbyr97CLXg" target="_5S_tQHIQEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GfOWYHKzEe2QT8hMqOQJAg" source="_2rITIHIQEe2Pmbyr97CLXg" target="_lrL-AHIBEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_YXsz0HKzEe2QT8hMqOQJAg" source="_5S_tQHIQEe2Pmbyr97CLXg" target="_RblbsHICEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_mdVcUHK0Ee2QT8hMqOQJAg" source="_7jnPkHIREe2Pmbyr97CLXg" target="_399iEHISEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Nsh_sHK1Ee2QT8hMqOQJAg" source="_5mygEHIdEe2hu-NN6p4cWg" target="_U6ydwHITEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V6pbMHK2Ee2QT8hMqOQJAg" name="adminCompletesOperations" source="_5mygEHIdEe2hu-NN6p4cWg" target="_eaHd8HIeEe2hu-NN6p4cWg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_2rITIHIQEe2Pmbyr97CLXg" name="signUp"/>
+          <subvertex xmi:type="uml:State" xmi:id="_5S_tQHIQEe2Pmbyr97CLXg" name="inputValues"/>
+          <subvertex xmi:type="uml:State" xmi:id="_8h218HIQEe2Pmbyr97CLXg" name="logIn"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7jnPkHIREe2Pmbyr97CLXg" name="performCURD"/>
+          <subvertex xmi:type="uml:State" xmi:id="_5mygEHIdEe2hu-NN6p4cWg" name="generateRevenue"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_XbJzoHIREe2Pmbyr97CLXg" name="TOURGUIDE">
+        <region xmi:type="uml:Region" xmi:id="_dGF9MHIREe2Pmbyr97CLXg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="__vXJkHJZEe2AmIW173vzTg" source="_dGHyYHIREe2Pmbyr97CLXg" target="_lrL-AHIBEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ZESKcHJaEe2AmIW173vzTg" source="_g0vZMHIREe2Pmbyr97CLXg" target="_RblbsHICEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_lOCxkHJaEe2AmIW173vzTg" source="_ibqTsHIREe2Pmbyr97CLXg" target="_g0vZMHIREe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_EZUScHK2Ee2QT8hMqOQJAg" source="_ibqTsHIREe2Pmbyr97CLXg" target="_nL7HQHIdEe2hu-NN6p4cWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_IFVRMHK2Ee2QT8hMqOQJAg" source="_nL7HQHIdEe2hu-NN6p4cWg" target="_IvgwgHIPEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_dGHyYHIREe2Pmbyr97CLXg" name="signUp"/>
+          <subvertex xmi:type="uml:State" xmi:id="_g0vZMHIREe2Pmbyr97CLXg" name="inputValues"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ibqTsHIREe2Pmbyr97CLXg" name="logIn"/>
+          <subvertex xmi:type="uml:State" xmi:id="_nL7HQHIdEe2hu-NN6p4cWg" name="Notified"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_eaHd8HIeEe2hu-NN6p4cWg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_ojdawHJFEe2AmIW173vzTg" name="correct" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_1Wd9wHJGEe2AmIW173vzTg" name="existance" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_DWd0IHJPEe2AmIW173vzTg" name="TRANSPORTS">
+        <region xmi:type="uml:Region" xmi:id="_EKkKkHJPEe2AmIW173vzTg" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_TMRyEHJWEe2AmIW173vzTg" source="_QE7q0HJPEe2AmIW173vzTg" target="_6xmBUHJUEe2AmIW173vzTg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KMED4HJYEe2AmIW173vzTg" source="_Jv40UHJPEe2AmIW173vzTg" target="_O_lyAHIQEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_c1e2EHJYEe2AmIW173vzTg" name="yes" source="_6xmBUHJUEe2AmIW173vzTg" target="_APtV0HITEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_h0ClUHJZEe2AmIW173vzTg" source="_LKkpoHJPEe2AmIW173vzTg" target="_R8JpwHIQEe2Pmbyr97CLXg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tVSa8HJZEe2AmIW173vzTg" name="no" source="_6xmBUHJUEe2AmIW173vzTg" target="_roCEAHIOEe2Pmbyr97CLXg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_EKmm0HJPEe2AmIW173vzTg" name="displayTransports"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Jv40UHJPEe2AmIW173vzTg" name="bookTransport"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LKkpoHJPEe2AmIW173vzTg" name="cancelTransports"/>
+          <subvertex xmi:type="uml:State" xmi:id="_QE7q0HJPEe2AmIW173vzTg" name="transportUpdated"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_6xmBUHJUEe2AmIW173vzTg" name="cancelTransport?" kind="choice"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_JVSaAHKyEe2QT8hMqOQJAg" name="correct" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_AVlpMHK0Ee2QT8hMqOQJAg" name="correct" kind="choice"/>
+    </region>
+  </packagedElement>
+</uml:Model>
