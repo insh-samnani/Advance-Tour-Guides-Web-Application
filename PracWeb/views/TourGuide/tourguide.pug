@@ -1,0 +1,61 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../../static/style.css
+            include ../../static/TourGuide/style_tourguide.css
+        script
+            include ../../static/index.js
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/hometourguide') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/abouttourguide') About Us]
+                li #[a(href='/contacttourguide') Join Us]
+                li #[a(href='/logout' onclick="myFunc2()") Log Out]
+                li#serv2 #[a(href='/tourguideinfo') Details]
+        section#flightintro
+            div #[h1 WE HAVE PLANNED FOR YOU]
+            div.h3class #[h3 Please Have A Sweet Look!!!]
+        section#flightsearch
+            div#flightform
+                div#agenda
+            div#flightform1
+                h1#flightintroh1 UPCOMING/ONGOING TOURS
+                h2 Are You Excited?
+                if message == " "
+                    h1#flightintroh2 NO UPCOMING TOURS
+                else
+                    div#signupform
+                        h2#headingwa YOUR ID
+                        h3#headingwa1= flightt.TourGuideID
+                        br
+                        h2#headingwa YOUR CUSTOMER ID
+                        h3#headingwa1= flightt.UserID 
+                        br
+                        h2#headingwa YOUR CUSTOMER NAME
+                        h3#headingwa1= flightt.Name
+                        br
+                        h2#headingwa YOUR CUSTOMER EMAIL
+                        h3#headingwa1= flightt.Email
+                        br
+                        h2#headingwa TOUR ID
+                        h3#headingwa1= flightt.TourID
+                        br
+                        h2#headingwa TOUR LOCATION
+                        h3#headingwa1= flightt.Location
+                        br
+                        h2#headingwa TOUR DURATION
+                        h3#headingwa1= flightt.Days
+                        br
+                        h2#headingwa DEPARTURE DATE
+                        h3#headingwa1= flightt.DepartureDate
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com

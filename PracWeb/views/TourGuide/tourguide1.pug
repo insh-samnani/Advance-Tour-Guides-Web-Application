@@ -1,0 +1,33 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../../static/style.css
+            include ../../static/TourGuide/style_tourguide1.css
+        script
+            include ../../static/index.js
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/hometourguide') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/abouttourguide') About Us]
+                li #[a(href='/contacttourguide') Join Us]
+                li #[a(href='/logout' onclick="myFunc2()") Log Out]
+                li#serv2 #[a(href='/tourguideinfo') Details]
+        section#flightintro
+            div #[h1 WE HAVE PLANNED FOR YOU]
+            div.h3class #[h3 Please Have A Sweet Look!!!]
+        section#flightsearch
+            div#flightform
+                div#agenda
+            div#flightform1
+                h1#flightintroh1 NO UPCOMING TOURS
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com

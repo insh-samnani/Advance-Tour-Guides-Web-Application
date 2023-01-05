@@ -1,0 +1,78 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../../static/style.css
+            include ../../static/style_contact.css
+        script
+            include ../../static/index.js
+    body 
+        //- if message == " "
+        //-     nav#navbar.top    
+        //-         //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+        //-         ul
+        //-             div#logo  
+        //-                 img(src="../static/images/sitelogo.png")
+        //-                 | ATG
+        //-             li #[a(href='/hometourguide') Home]
+        //-                 //- If you want to use li and a together
+        //-             li #[a(href='/abouttourguide') About Us]
+        //-             li #[a(href='/contacttourguide') Join Us]
+        //-             li #[a(href='/logout' onclick="myFunc2()") Log Out]
+        //- else
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/hometourguide') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/abouttourguide') About Us]
+                li #[a(href='/contacttourguide') Join Us]
+                li #[a(href='/logout' onclick="myFunc2()") Log Out]
+                li#serv2 #[a(href='/tourguideinfo') Details]
+    section#contactus
+        div#contactcard
+            div#contactform
+                div#agenda
+                    h2 CONTACT US
+                    h3 Need to get in touch with us? Sign up NOW. Having any difficulty? Email us at 
+                    h3 #[a(href="mailto:k200247@nu.edu.pk" _target="_blank") k200247@nu.edu.pk]
+                    h3 We will try to get to you back SOON
+            div#contactform
+                h1 SIGN UP
+                h3= message
+                form(action="/signup" id="signupform" method="post" autocomplete="off")
+                    <div class="some-class">
+                            label(id="checking") USER? #[input(type="radio" id="checking5" onclick="myFuncer()" name="checking1"  value="userr" autofocus)]
+                            label(id="checking") ADMIN? #[input(type="radio" id="checking3" onclick="myFuncer()" name="checking1"  value="adminn" autofocus)]
+                            label(id="checking") TOUR GUIDE? #[input(type="radio" id="checking4" onclick="myFuncer()" name="checking1"  value="tourguidee" autofocus)]
+                    </div>
+                    br
+                    label(id="name") YOUR NAME #[span(id="req") *]
+                    input(type="text" name="name" id="inputname" placeholder="Please Enter Your Name" autofocus required)
+                    br
+                    label(id="email") YOUR EMAIL #[span(id="req") *]
+                    input(type="email" name="email" id="inputemail" placeholder="Please Enter Your Email" autofocus required)
+                    br
+                    label(id="password") YOUR PASSWORD #[span(id="req") *]
+                    input(type="password" name="password" id="inputpassword" placeholder="Please Enter Your Password" autofocus required)
+                    br
+                    label(id="phoneno") YOUR CELL NO #[span(id="req") *]
+                    input(type="tel" id="phone" name="phone" pattern="[+]{1}[9-9]{1}[2-2]{1}[3-3]{1}[0-9]{9}" placeholder="Please Enter Your Cell No" autofocus required)
+                    br
+                    label(id="otp") ADMIN OTP #[span(id="req") *]
+                    input(type="text" id="phone1" name="otp" placeholder="Please Enter Admin OTP" autofocus value="")
+                    label(id="otp1") TOURGUIDE OTP #[span(id="req") *]
+                    input(type="text" id="phone2" name="otp1" placeholder="Please Enter Tourguide OTP" autofocus)
+                    label(id="otp2") LOCATION EXPERTISE #[span(id="req") *]
+                    input(type="text" id="phone3" name="loc" placeholder="1-NK 2-Chitral 3-Hunza 4-Murree 5-Swat 6-Skardu" autofocus)
+                    br
+                    button(class=button id="button" type="submit") Sign Up
+                form(action="/loginn" onclick="myFunc()" autocomplete="off")
+                    button(class=button id="buttonn" type="submit" ) Already Registered?
+    footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com
