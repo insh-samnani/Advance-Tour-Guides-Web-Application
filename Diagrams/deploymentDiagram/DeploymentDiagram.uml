@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cP3y0HOxEe2Tq_G1buPNfQ" name="DeploymentDiagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_cQ_0MHOxEe2Tq_G1buPNfQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fzmGUHOzEe2Tq_G1buPNfQ" name="ATG">
+    <packagedElement xmi:type="uml:Node" xmi:id="_8O1CwHOxEe2Tq_G1buPNfQ" name="frontend">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_gYbuMHOyEe2Tq_G1buPNfQ" name="CSS"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_hUSScHOyEe2Tq_G1buPNfQ" name="JavaScript"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_j-nxwHOyEe2Tq_G1buPNfQ" name="PUG 3.0.2" fileName=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_uhhIwHOyEe2Tq_G1buPNfQ" name="Server">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_HMRyUHOzEe2Tq_G1buPNfQ" name="Crypto 1.0.1" fileName=""/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_Ke29YHOzEe2Tq_G1buPNfQ" name="NodeMailer 6.7.8" fileName=""/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_N_UzcHOzEe2Tq_G1buPNfQ" name="Express 4.18.1" fileName=""/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_UvffsHOzEe2Tq_G1buPNfQ" name="Node 6.9.0"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_nULi4HOzEe2Tq_G1buPNfQ" name="System">
+      <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_uH2PEHOzEe2Tq_G1buPNfQ" name="WINDOWS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Device" xmi:id="_gW2ScHO1Ee2Tq_G1buPNfQ" name="Database Server">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_fuSoMHO2Ee2Tq_G1buPNfQ" name="MySQL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_yxtrQHO1Ee2Tq_G1buPNfQ" name="Container">
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_r3-owHO0Ee2Tq_G1buPNfQ" name="Admin"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_t7jDAHO0Ee2Tq_G1buPNfQ" name="User"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_utgEYHO0Ee2Tq_G1buPNfQ" name="TourGuide"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_wJI78HO0Ee2Tq_G1buPNfQ" name="Tours"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_zUKGcHO0Ee2Tq_G1buPNfQ" name="Hotels"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_Bwz9QHO1Ee2Tq_G1buPNfQ" name="Transportations"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_DHNIcHO1Ee2Tq_G1buPNfQ" name="Flights"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_FlV-0HO1Ee2Tq_G1buPNfQ" name="Package"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_p5TqsHO2Ee2Tq_G1buPNfQ" name="Web Server">
+      <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_sB1dcHO2Ee2Tq_G1buPNfQ" name="WINDOWS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_wKmpoHO2Ee2Tq_G1buPNfQ" name="Advance Tour Guides"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="__bARkHO2Ee2Tq_G1buPNfQ" name="PCs"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_B7vwAHO3Ee2Tq_G1buPNfQ" name="MobilePhones"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_GWom8HO3Ee2Tq_G1buPNfQ" name="&lt;&lt;HTTPS>>" memberEnd="_GWom83O3Ee2Tq_G1buPNfQ _GWxJ0HO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GWom8XO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GWom8nO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GWom83O3Ee2Tq_G1buPNfQ" name="web server" type="_p5TqsHO2Ee2Tq_G1buPNfQ" association="_GWom8HO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GWxJ0HO3Ee2Tq_G1buPNfQ" name="android" type="__bARkHO2Ee2Tq_G1buPNfQ" association="_GWom8HO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_MOAqAHO3Ee2Tq_G1buPNfQ" name="&lt;&lt;HTTPS>>" memberEnd="_MOAqA3O3Ee2Tq_G1buPNfQ _MOAqBHO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MOAqAXO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MOAqAnO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MOAqA3O3Ee2Tq_G1buPNfQ" name="ios" type="_B7vwAHO3Ee2Tq_G1buPNfQ" association="_MOAqAHO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MOAqBHO3Ee2Tq_G1buPNfQ" name="web server" type="_p5TqsHO2Ee2Tq_G1buPNfQ" association="_MOAqAHO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_h25eAHO3Ee2Tq_G1buPNfQ" memberEnd="_h2-WgXO3Ee2Tq_G1buPNfQ _h2-WgnO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h29vcHO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h2-WgHO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h2-WgXO3Ee2Tq_G1buPNfQ" name="system" type="_nULi4HOzEe2Tq_G1buPNfQ" association="_h25eAHO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h2-WgnO3Ee2Tq_G1buPNfQ" name="web server" type="_p5TqsHO2Ee2Tq_G1buPNfQ" association="_h25eAHO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_lxDmcHO3Ee2Tq_G1buPNfQ" memberEnd="_lxDmc3O3Ee2Tq_G1buPNfQ _lxDmdHO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lxDmcXO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lxDmcnO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lxDmc3O3Ee2Tq_G1buPNfQ" name="system" type="_nULi4HOzEe2Tq_G1buPNfQ" association="_lxDmcHO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lxDmdHO3Ee2Tq_G1buPNfQ" name="frontend" type="_8O1CwHOxEe2Tq_G1buPNfQ" association="_lxDmcHO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_vcKZ0HO3Ee2Tq_G1buPNfQ" memberEnd="_vcKZ03O3Ee2Tq_G1buPNfQ _vcKZ1HO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vcKZ0XO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vcKZ0nO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vcKZ03O3Ee2Tq_G1buPNfQ" name="system" type="_nULi4HOzEe2Tq_G1buPNfQ" association="_vcKZ0HO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vcKZ1HO3Ee2Tq_G1buPNfQ" name="server" type="_uhhIwHOyEe2Tq_G1buPNfQ" association="_vcKZ0HO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_xz8wkHO3Ee2Tq_G1buPNfQ" memberEnd="_xz8wk3O3Ee2Tq_G1buPNfQ _xz8wlHO3Ee2Tq_G1buPNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xz8wkXO3Ee2Tq_G1buPNfQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xz8wknO3Ee2Tq_G1buPNfQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xz8wk3O3Ee2Tq_G1buPNfQ" name="database server" type="_gW2ScHO1Ee2Tq_G1buPNfQ" association="_xz8wkHO3Ee2Tq_G1buPNfQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xz8wlHO3Ee2Tq_G1buPNfQ" name="system" type="_nULi4HOzEe2Tq_G1buPNfQ" association="_xz8wkHO3Ee2Tq_G1buPNfQ"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
