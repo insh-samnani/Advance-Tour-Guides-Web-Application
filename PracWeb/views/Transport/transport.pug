@@ -1,0 +1,43 @@
+doctype html
+html 
+    head 
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Advance Tour Guides
+        style 
+            include ../../static/Transport/style_transport1.css
+    body 
+        nav#navbar.top    
+            //- giving id=navbar and class=top  If you want to give multiple classes, do nav.top.first.second
+            ul
+                div#logo  
+                    img(src="../static/images/sitelogo.png")
+                    | ATG
+                li #[a(href='/') Home]
+                    //- If you want to use li and a together
+                li #[a(href='/about') About Us]
+                li #[a(href='/contact') Join Us]
+                li #[a(href='/') Log Out]
+                li#serv #[a(href='/services') Services]
+        section#siteintro
+            div #[h1 WE HAVE PLANNED FOR YOU]
+            div.h3class #[h3 Please Have A Sweet Look!!!]
+        section#vision 
+            h3.vision MODES
+        section#visions 
+            for flightt in flightlist
+                    div.vision1
+                        div.box
+                            div.boximg
+                                img(src="../static/images/transport2.jpg")
+                            div.content
+                                p= flightt.ID
+                                p= flightt.Mode
+                                p= flightt.Brand
+                                p= flightt.Seats
+                                p= flightt.AC
+                                p= flightt.Amount
+        div#form
+            form(action="/booktransport" autocomplete="off")
+                button(class=button id="button" type="submit") CLICK TO PROCEED
+        footer#footer
+            | Copyright @ 2022 AdvanceTourGuides.com
