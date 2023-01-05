@@ -1,0 +1,63 @@
+Unique on user, touguide, and admin email
+for PRIMARY KEY, CONSTRAINT NAME PRIMARY for all tables
+
+alter table toursbooked add CONSTRAINT toursbooked_fk1 FOREIGN KEY (TourID) REFERENCES tours (ID);
+
+alter table toursbooked add CONSTRAINT toursbooked_fk2 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table toursbooked add CONSTRAINT toursbookedcheck_1 check (ChildrenSeats + AdultSeats = TotalSeats);
+
+alter table transportbooked add CONSTRAINT transportbooked_fk1 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table transportbooked add CONSTRAINT transportbooked_fk2 FOREIGN KEY (TransportID) REFERENCES transport (ID);
+
+alter table hotelsbooked add CONSTRAINT hotelsbooked_fk1 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table hotelsbooked add CONSTRAINT hotelsbooked_fk2 FOREIGN KEY (HotelID) REFERENCES hotels (ID);
+
+alter table flightsbooked add CONSTRAINT flightsbooked_fk1 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table flightsbooked add CONSTRAINT flightsbooked_fk2 FOREIGN KEY (FLightID) REFERENCES flights (ID);
+
+alter table flightsbooked add CONSTRAINT flightsbookedcheck_1 check (ChildrenSeats + AdultSeats = SeatsBooked);
+
+alter table booknow add CONSTRAINT booknow_fk1 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table booknow add CONSTRAINT booknow_fk2 FOREIGN KEY (TourID) REFERENCES tours (ID);
+
+alter table booknow add CONSTRAINT booknow_fk3 FOREIGN KEY (TransportID) REFERENCES transport (ID);
+
+alter table booknow add CONSTRAINT booknow_fk4 FOREIGN KEY (HotelID) REFERENCES hotels (ID);
+
+alter table takestour add CONSTRAINT takestour_fk1 FOREIGN KEY (UserID) REFERENCES users (ID);
+
+alter table takestour add CONSTRAINT takestour_fk2 FOREIGN KEY (TourID) REFERENCES tours (ID);
+
+alter table takestour add CONSTRAINT takestour_fk3 FOREIGN KEY (TourguideID) REFERENCES tourguides (ID);
+
+alter table flights add CONSTRAINT flightscheck_1 check (Seats >= Booked);
+
+alter table hotels add CONSTRAINT hotelscheck_1 check (Rooms >= Booked);
+
+alter table users add CONSTRAINT userscheck_1 check (cell LIKE '+923%');
+
+alter table users add CONSTRAINT userscheck_2 check (email LIKE '%@hotmail.com' OR email LIKE '%@gmail.com' OR email LIKE '%@yahoo.com' OR email LIKE '%@outlook.com' OR email LIKE '%@nu.edu.pk');
+
+alter table admin add CONSTRAINT admincheck_1 check (cell LIKE '+923%');
+
+alter table admin add CONSTRAINT admincheck_2 check (email LIKE '%@hotmail.com' OR email LIKE '%@gmail.com' OR email LIKE '%@yahoo.com' OR email LIKE '%@outlook.com' OR email LIKE '%@nu.edu.pk');
+
+alter table transport add CONSTRAINT transportcheck_1 check ((Seats = 0 AND Status = 'Booked') OR (Seats > 0 AND Status = 'Free'));
+
+alter table tourguides add CONSTRAINT tourguidescheck_1 check (Status = "Booked" || Status = "Free");
+
+alter table tourguides add CONSTRAINT tourguidescheck_3 check (cell LIKE '+923%');
+
+alter table tourguides add CONSTRAINT tourguidescheck_2 check (email LIKE '%@hotmail.com' OR email LIKE '%@gmail.com' OR email LIKE '%@yahoo.com' OR email LIKE '%@outlook.com' OR email LIKE '%@nu.edu.pk');
+
+alter table tourguides add CONSTRAINT tourguidescheck_4 check (Location IN ('NK', 'Chitral', 'Hunza', 'Skardu', 'Murree', 'Swat'));
+
+//tours mai agr koi insert kr bhi de toh still user ko kbhi show nh hoga because we have hardcoded pug pages for 6 tours (user will never get tourIDS greater than 6)
+
+SELECT * FROM information_schema.table_constraints
+WHERE table_name = 'colleges'
