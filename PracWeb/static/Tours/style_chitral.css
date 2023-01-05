@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+@media only screen and (max-width:1300px){
+    #text h4{
+        font-size: 23px !important;
+    }
+    #text h1{
+        font-size: 28px !important;
+    }
+}
+@media only screen and (max-width:900px){
+    #text h4{
+        font-size: 20px !important;
+    }
+    #text h1{
+        font-size: 25px !important;
+    }
+    #topsec h1{
+        padding: 45px !important;
+    }
+    #topsec button{
+        margin-top: 0px !important;
+        width: 120% !important;
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width:680px){
+    #text h4{
+        font-size: 20px !important;
+    }
+    #text h1{
+        font-size: 23px !important;
+    }
+    #midsec{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    #midsec .box3, .box5, .box7, .box9, .box11, .box13, .box15{
+        display: none !important;
+    }
+}
+@media only screen and (max-width:400px){
+    #text h4{
+        font-size: 18px !important;
+    }
+    #text h1{
+        font-size: 20px !important;
+    }
+    #midsec{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    #midsec .box3, .box5, .box7, .box9, .box11, .box13, .box15{
+        display: none !important;
+    }
+}
+#topsec{
+    padding-bottom: 95px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    animation: image 25s infinite;
+}
+#topsec h1{
+    font-size:50px;
+}
+#button{
+    display: block;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 150%;
+    background-color: black;
+    color: rgb(187, 163, 97);
+    font-size: 20px;
+    padding: 13px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+@keyframes image{
+    0%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral3.jpg');
+    }
+    20%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral4.jpg');
+    }
+    40%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral5.jpg');
+    }
+    60%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral6.jpg');
+    }
+    80%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral7.jpg');
+    }
+    100%{
+        background: center / cover no-repeat url('/static/Images/chitral/chitral1.jpg');
+    }
+}
+#midsec{
+    background-color: black;
+    text-align:center; 
+    display:block; 
+    display: grid; 
+    padding-top: 60px;
+    grid-template-columns: repeat(3,1fr);
+    height:3500px;
+}
+
+#midsec .box1{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/tirich1.jpg');
+}
+#midsec .box2{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: rgb(187, 163, 97);
+}
+#midsec .box3{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/tirich2.jpg');
+}
+#midsec .box4{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/museum1.jpg');
+}
+#midsec .box5{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/museum2.jpg');
+}
+#midsec .box6{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/shahi1.jpg');
+}
+#midsec .box7{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/shahi2.png');
+}
+#midsec .box8{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/qila1.jpg');
+}
+#midsec .box9{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/qila2.jpg');
+}
+#midsec .box10{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/chashma1.jpg');
+}
+#midsec .box11{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/chashma2.jpg');
+}
+#midsec .box12{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/barmo1.jpg');
+}
+#midsec .box13{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/barmo2.jpg');
+}
+#midsec .box14{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/ayun1.jpg');
+}
+#midsec .box15{
+    border-radius: 10px;
+    margin:10px;
+    height: 400px;
+    background: center / cover no-repeat url('/static/Images/chitral/ayun2.jpg');
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#midsec #text{
+    height: 390px;
+    background-color: rgb(187, 163, 97);
+    border-radius: 10px;
+}
+
+#text h1{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#text h4{
+    text-align: center;
+    font-family: 'Yeon Sung';
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-top: 15%;
+}
+#serv{
+    display: block;
+}

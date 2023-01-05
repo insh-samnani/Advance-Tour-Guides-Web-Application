@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#tourintro{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/baseimg.jpg');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+}
+
+#tourintro h1{
+    text-align: center;
+    margin-top: 57px;
+}
+
+#tourintro h3{
+    text-align: center;
+    font-family: 'Teko';
+    padding-top: 2px;
+    font-size: 28px;
+}
+
+#tourintro h1:hover{
+    transform: scale(1.2);
+}
+
+#packages{
+    margin-top: 1%;
+    background-color: rgb(187, 163, 97);;
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-gap: 36px; 
+    grid-template-columns: repeat(2,1fr);
+}
+
+#packages #package1{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/naran.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages #package2{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/chitral.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages #package3{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/hunza.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages #package4{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/murree.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages #package5{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/swat.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages #package6{
+    padding-bottom: 172px;
+    background:center / cover no-repeat url('/static/images/skardu.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    border-radius: 20px;
+}
+
+#packages a{
+    text-decoration: none;
+    color: black;
+}
+
+#packages a:hover{
+    color: white
+}
+
+.trigger{
+    color: red;
+}
+
+@media(max-width: 550px){
+    #packages{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+#serv{
+    display: block;
+}

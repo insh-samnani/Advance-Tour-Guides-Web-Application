@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&family=Yeon+Sung&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(187, 163, 97);
+}
+
+div#mybookings{
+    margin: auto 5%;
+    margin-bottom: 3%;
+    padding: 4px;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#tablediv{
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    padding-left: 20%;
+    display: grid; 
+    grid-gap: 16px; 
+    grid-template-columns: repeat(1,1fr);
+}
+
+#table1{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:70%;
+}
+#table1 td, #table1 th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#table1 tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#table1 tr:hover{
+    background-color: #ddd;
+}
+#table1 th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: rgb(187, 163, 97);
+}
+
+#formgrid{
+    text-align:center; 
+    display:block; 
+    padding:16px; 
+    display: grid; 
+    grid-template-columns: repeat(1,1fr);
+}
+
+#form1{
+    background-color: rgb(231, 222, 207);
+    height: auto;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#form1 h1{
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=number],input[type=email]{
+    font-family: 'Yeon Sung';
+    background-color: rgb(187, 163, 97);
+    width: 80%;
+    padding: 12px 20px;
+    margin: 22px 34px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 20px;
+    font-size: medium;
+}
+
+#footer{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    background-color: black;
+    color: rgb(187, 163, 97);
+    font-size: 1.2rem;
+}
+
+#button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-family: 'Yeon Sung';
+    font-weight: bold;
+    width: 30%;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-size: 18px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media(max-width: 830px){
+    #form1{
+        width: 65%;
+    }
+}
+
+@media(max-width: 550px){
+    #form1{
+        width: 90%;
+    }
+}
+#serv{
+    display: block;
+}
+#serv2{
+    display: block;
+}
